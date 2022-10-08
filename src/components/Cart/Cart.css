@@ -1,0 +1,15 @@
+.orange{
+    background-color: rgb(250, 230, 194);
+}
+.pink{
+    background-color: lightpink;
+}
+.blue{
+    background-color: skyblue;
+}
+.purple{
+    background-color: lavender;
+}
+.bold{
+    font: bold;
+}

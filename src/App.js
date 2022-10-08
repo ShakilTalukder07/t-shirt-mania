@@ -3,6 +3,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './layouts/Main';
 import Home from './components/Home/Home';
 import Orders from './components/Orders/Orders';
+import Grandpa from './components/Grandpa/Grandpa';
+import About from './components/About/About';
 
 function App() {
   const router = createBrowserRouter([
@@ -11,15 +13,22 @@ function App() {
       element: <Main></Main>,
       children: [
         {
-          path:'/',
+          path: '/',
           loader: () => fetch('t-shirts.json'),
-          element:<Home></Home>
+          element: <Home></Home>
         },
         {
-          path:'/orders',
-          element:<Orders></Orders>
+          path: '/orders',
+          element: <Orders></Orders>
         },
-        
+        {
+          path: '/about',
+          element: <About></About>
+        },
+        {
+          path: '/grandpa',
+          element: <Grandpa></Grandpa>
+        }
       ],
     }
   ])
